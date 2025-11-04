@@ -1,8 +1,23 @@
 ---
-import SiteMaintenance from "../components/templates/SiteMaintenance.astro";
-import Layout from "../layouts/Layout.astro";
+import Layouts from "../layouts/layouts.astro";
+import Sitio from "../components/templates/sitio.astro";
+import Habilidades from "../components/templates/Habilidades.astro";
+import Proyectos from "../components/templates/Proyectos.astro";
+import Contacto from "../components/templates/Contacto.astro";
 ---
 
-<Layout>
-	<SiteMaintenance />
-</Layout>
+<Layouts>
+  <header class="fixed top-0 w-full bg-gray-900 bg-opacity-90 text-white flex justify-center gap-8 py-4 z-50 shadow-md">
+    <a href="#inicio" class="hover:text-blue-400 transition">Inicio</a>
+    <a href="#habilidades" class="hover:text-blue-400 transition">Habilidades</a>
+    <a href="#proyectos" class="hover:text-blue-400 transition">Proyectos</a>
+    <a href="#contacto" class="hover:text-blue-400 transition">Contacto</a>
+  </header>
+
+  <main>
+    <section id="inicio"><Sitio /></section>
+    <section id="habilidades"><Habilidades /></section>
+    <section id="proyectos"><Proyectos /></section>
+    <section id="contacto"><Contacto /></section>
+  </main>
+</Layouts>
