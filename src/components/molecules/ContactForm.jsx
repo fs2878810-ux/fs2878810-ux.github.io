@@ -8,25 +8,20 @@ function Label(props){
     );
 }
 
-function Input(props, ...rest){
+function Input({props, ...rest}){
     return(
         <input 
-        type={props.type || "text"}
-        className="mt-1 block w-full rounded-lg p-4 border border-white hover:border-red-500 transition-all duration-300"
-        placeholder={props.placeholder || ""}
+        className="mt-1 block w-full rounded-lg p-4 border border-gray-300 hover:border-red-500 transition-all duration-300"
         {...rest}
         />
     );
 }
 
 
-function TextArea(props, ...rest){
+function TextArea({props, ...rest}){
     return(
         <textarea 
-        type={props.type || "text"}
-        className="mt-1 block w-full rounded-lg p-4 border border-white hover:border-red-500 transition-all duration-300"
-        placeholder={props.placeholder || ""}
-        rows={props.rows || 4}
+        className="mt-1 block w-full rounded-lg p-4 border border-gray-300 hover:border-red-500 transition-all duration-300"
         {...rest}
         />
     );
@@ -40,42 +35,39 @@ export default function ContactForm(){
 
     const handleSubmit = async (e) =>{
         e.preventDefault();
-        setLoading(false);
+        setLoading(true);
         setTimeout(() =>{
-        nameRef.current.value = "";
-        emailRef.current.value = "";
-        messageRef.current.value = "";
-    }, 2000);
-}
+            setLoading(false);
+            nameRef.current.value = "";
+            emailRef.current.value = "";
+            messageRef.current.value = "";
+        }, 2000);
+    }
 
     const SubmitButton = useMemo(() => {
-        if (loading){
-            return(
-                <>loading...</>
-            );
-        }
         return(
             <button
                 type="submit"
-                className="mt-4 w-full bg-reg-500 text-white py-3 rounded-lg hover:bg-red-600 transition-all duration-300"
+                className="mt-4 w-full bg-red-500 text-white py-3 rounded-lg hover:bg-red-600 transition-all duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:text-black"
                 onClick={handleSubmit}
             >
-                Send
+                {loading ? "Sending..." : "Send"}
             </button>
         );
     }, [loading]);
 
     return(
-        <>
+        <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">Contact Us</h2>
             <fieldset className="w-full flex flex-col gap-4" disabled={loading}>
-                <label>Name</label>
-                <Input placeholder="Your name" ref ={nameRef} />
-                <label>Email</label>
+                <Label>Name</Label>
+                <Input placeholder="Your name" ref={nameRef} />
+                <Label>Email</Label>
                 <Input type="email" placeholder="Your Email" ref={emailRef} />
-                <label>Message</label>
-                <TextArea placeholder="You message" rows={6} ref={messageRef} />
+                <Label>Message</Label>
+                <TextArea placeholder="Your message" rows={6} ref={messageRef} />
                 {SubmitButton}
             </fieldset>
-        </>
+        </div>
     );
 }
