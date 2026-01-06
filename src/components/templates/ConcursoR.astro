@@ -1,41 +1,91 @@
-<style define:vars={{}}>
-  .background {
-    background-image: var(--BackgroundSrc);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #f3f4f6;
+<style>
+  body {
+    margin: 0;
+    padding: 0;
   }
+
+  .background {
+    background-color: #ffffff;
+    min-height: 100vh;
+  }
+
+  .card-item {
+    background-color: #1f2937;
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow:
+      0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+  img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 </style>
 
-<div class="background w-full min-h-screen flex flex-col items-center pt-10">
-  <h1 class="text-5xl font-extrabold mb-14 text-black text-center drop-shadow-md tracking-wide">
-    Alan Fernando Sánchez Romero
+<div
+  class="background w-full min-h-screen flex flex-col items-center pt-10 px-6"
+>
+  <h1
+    class="text-5xl font-extrabold mb-14 text-black text-center drop-shadow-md tracking-wide"
+  >
+    Concurso de peleas de robots
   </h1>
-  <div
-    class="flex flex-col md:flex-row items-center justify-between gap-12 px-6 w-full max-w-6xl">
-    <p
-      class="text-lg leading-relaxed text-white bg-gray-800 p-8 rounded-2xl backdrop-blur-md shadow-xl border border-white/20 max-w-3xl">
-      Actualmente soy estudiante de la Ingeniería en Sistemas Computacionales en la Universidad Mexiquense del Bicentenario.
-      <br>
-      Mi formación en la UMB no solo me ha brindado herramientas para mi desarrollo
-      profesional, sino que también me ha permitido descubrir áreas que realmente
-      disfruto y en las que me gustaría especializarme.
-      <br /><br />
 
-      Fuera del entorno escolar, una de mis actividades favoritas es montar a caballo.
-      Es algo que me transmite una sensación de conexión con la naturaleza y me ayuda
-      a despejar la mente.
-      <br /><br />
+  <div class="w-full max-w-7xl flex flex-col lg:flex-row gap-8">
+    <div class="w-full lg:w-1/2 flex flex-col gap-6">
+      <h4
+        class="text-2xl font-extrabold text-black text-center drop-shadow-md tracking-wide"
+      >
+        14 de Noviembre del 2024
+      </h4>
+      <div class="card-item text-lg leading-relaxed">
+        La academia de Ingeniería en Sistemas Computacionales participó en un
+        concurso de peleas de robots realizado en Atlacomulco. Nuestro objetivo
+        fue diseñar, construir y programar un robot capaz de competir contra los
+        equipos de otras universidades, poniendo en práctica los conocimientos
+        adquiridos durante la carrera.
+      </div>
 
-      De igual forma, la música ocupa un lugar importante en mi vida, ya sea para
-      relajarme, concentrarme o simplemente acompañar mis momentos libres.
-      <br /><br />
+      <div class="card-item text-lg leading-relaxed">
+        El robot fue desarrollado en equipos, desde el diseño hasta la
+        programación y las pruebas. Aunque conocía bien su funcionamiento, el
+        día del concurso, al ver los robots de los demás equipos, pensé que no
+        lo lograríamos. La presión fue tanta que incluso terminé con dolor de
+        estómago por el estrés, ya que cualquier error en el control podía
+        significar perder la pelea. A pesar de los nervios, durante los combates
+        logré concentrarme y aplicar lo que habíamos practicado. El robot
+        respondió mejor de lo esperado y poco a poco fuimos avanzando rondas, lo
+        que aumentó mi confianza. Esta experiencia me enseñó a controlar el
+        estrés, a tomar decisiones rápidas y a confiar tanto en el trabajo en
+        equipo como en mis propias habilidades.
+      </div>
 
-      Aunque disfruto convivir con los demás, prefiero hacerlo con personas con
-      quienes realmente me siento cómodo. Para mí, la calidad de la compañía es más
-      importante que la cantidad, y valoro mucho las conexiones auténticas y sinceras.
-    </p>
-    <img src="/images/yo.jpeg" alt="Foto personal" class="w-64 h-64 md:w-100 md:h-100 object-cover rounded-2xl shadow-2xl"/>
+      <div class="card-item text-lg leading-relaxed">
+        Este concurso fue de gran utilidad para reforzar mis conocimientos
+        prácticos y personales. Además, ganar el primer lugar nos motivó a
+        confiar más en nuestras habilidades y a valorar el esfuerzo colectivo.
+        Sin duda, fue una experiencia que contribuyó tanto a mi formación
+        profesional como personal.
+      </div>
+    </div>
+
+    <div class="w-full lg:w-2/3 flex justify-center lg:sticky lg:top-10">
+      <img
+        src="/images/Robot.jpeg"
+        alt="Foto del robot"
+        class="rounded-2xl shadow-2xl w-full h-full object-cover"
+      />
+    </div>
   </div>
+  <a
+    href="/Entradas"
+    class="mb-6 self-start bg-gray-800 text-white px-6 py-2 rounded-xl shadow-lg hover:bg-gray-700 transition"
+  >
+    Regresar
+  </a>
 </div>
