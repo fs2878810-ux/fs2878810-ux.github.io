@@ -83,7 +83,7 @@ export default function ContactForm() {
                 className="mt-4 w-full bg-red-500 text-white py-3 rounded-lg hover:bg-red-600 transition-all duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:text-black"
                 disabled={loading}
             >
-                {loading ? "Sending..." : "Send"}
+                {loading ? "Sending..." : "Enviar"}
             </button>
         );
     }, [loading]);
@@ -91,20 +91,20 @@ export default function ContactForm() {
     return (
         <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-6 text-gray-800">
-                Contact Us
+                Contactame
             </h2>
 
             <form onSubmit={handleSubmit}>
                 <fieldset className="w-full flex flex-col gap-4" disabled={loading}>
-                    <Label>Name</Label>
-                    <Input placeholder="Your name" ref={nameRef} required />
+                    <Label>Nombre</Label>
+                    <Input placeholder="Tu nombre" ref={nameRef} required />
 
-                    <Label>Email</Label>
-                    <Input type="email" placeholder="Your Email" ref={emailRef} required />
+                    <Label>Correo</Label>
+                    <Input type="email" placeholder="Tu correo" ref={emailRef} required />
 
-                    <Label>Message</Label>
+                    <Label>Mensaje</Label>
                     <TextArea
-                        placeholder="Your message"
+                        placeholder="Tu mensaje"
                         rows={6}
                         ref={messageRef}
                         required
