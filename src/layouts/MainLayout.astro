@@ -1,0 +1,45 @@
+---
+const { title = "Mi sitio" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+
+    <style is:global>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .background {
+        background-color: #ffffff;
+        min-height: 100vh;
+      }
+
+      .card-item {
+        background-color: #1f2937;
+        color: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow:
+          0 20px 25px -5px rgb(0 0 0 / 0.1),
+          0 8px 10px -6px rgb(0 0 0 / 0.1);
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <slot />
+  </body>
+</html>

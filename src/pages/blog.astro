@@ -1,0 +1,28 @@
+---
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog");
+---
+
+<div class="w-full min-h-screen flex flex-col justify-center items-center bg-gray-100 px-6 pt-10">
+  <h1 class="text-4xl font-bold mb-8 text-black text-center">Actividades</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 w-11/12 max-w-7xl">
+    {posts.map((post) => (
+      <a
+        href={`/blog/${post.slug}`}
+        class="bg-gray-800 shadow-xl rounded-xl p-3 text-white flex flex-col"
+      >
+        <img
+          src={post.data.image}
+          alt={post.data.title}
+          class="mb-2 h-32 w-full object-cover rounded-md"
+        />
+
+        <h2 class="text-base font-bold mb-1 text-center">{post.data.title}</h2>
+
+        <p class="text-s text-gray-300 text-center">{post.data.description}</p>
+      </a>
+    ))}
+  </div>
+</div>
