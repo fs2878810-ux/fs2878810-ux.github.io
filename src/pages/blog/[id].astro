@@ -22,7 +22,6 @@ const { Content } = await post.render();
     </h1>
 
     <div class="content-wrapper">
-      <!-- Columna izquierda: Contenido del texto -->
       <div class="text-column">
 
 
@@ -30,8 +29,6 @@ const { Content } = await post.render();
           <Content />
         </div>
       </div>
-
-      <!-- Columna derecha: Imagen estática -->
       {post.data.image && (
         <div class="image-column">
           <img
@@ -150,7 +147,6 @@ const { Content } = await post.render();
       display: none;
     }
 
-    /* Layout de dos columnas en pantallas grandes */
     @media (min-width: 1024px) {
       .content-wrapper {
         flex-direction: row;
