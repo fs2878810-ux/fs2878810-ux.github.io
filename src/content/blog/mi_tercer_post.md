@@ -14,7 +14,7 @@ Participé en un programa que permite a estudiantes de licenciatura realizar est
 
 ---
 
-Durante la estancia desarrollé el proyecto titulado **“Evaluación y fortalecimiento de la seguridad de datos en sistemas SCADA”**, bajo la asesoría del investigador colombiano **Luis Francisco López Urrea**.
+Durante la estancia desarrollé el proyecto titulado “Evaluación y fortalecimiento de la seguridad de datos en sistemas SCADA”, bajo la asesoría del investigador colombiano **Luis Francisco López Urrea.
 
 A lo largo del proyecto analicé los riesgos y vulnerabilidades presentes en este tipo de sistemas, así como las medidas necesarias para fortalecer la protección de la información en entornos industriales. Este trabajo me permitió aplicar conocimientos de seguridad informática, análisis de sistemas y redes, además de adquirir nuevos aprendizajes relacionados con infraestructuras críticas y ciberseguridad industrial.
 

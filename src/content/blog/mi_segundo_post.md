@@ -10,11 +10,11 @@ image: "/images/reconocimiento_SHPE.jpeg"
 
 **28 de marzo de 2025**
 
-El 28 de marzo de 2025 participé en un curso impartido por la **Sociedad de Ingenieros Profesionales Hispanos (SHPE)** de la Universidad de Michigan. Este curso estuvo enfocado en fortalecer conocimientos y habilidades relacionadas con el área tecnológica.
+El 28 de marzo de 2025 participé en un curso impartido por la Sociedad de Ingenieros Profesionales Hispanos (SHPE) de la Universidad de Michigan. Este curso estuvo enfocado en fortalecer conocimientos y habilidades relacionadas con el área tecnológica.
 
 ---
 
-Durante el curso se abordaron temas como **Arduino, redes neuronales, inteligencia artificial y circuitos electrónicos**, los cuales fueron explicados de manera clara y acompañados de ejemplos prácticos. También se presentaron aplicaciones reales de estas tecnologías.
+Durante el curso se abordaron temas como Arduino, redes neuronales, inteligencia artificial y circuitos electrónicos, los cuales fueron explicados de manera clara y acompañados de ejemplos prácticos. También se presentaron aplicaciones reales de estas tecnologías.
 
 A través de las explicaciones y demostraciones, aprendí cómo estas áreas se relacionan entre sí y cómo pueden aplicarse en proyectos reales. Además, los ponentes compartieron experiencias profesionales que ayudaron a comprender mejor el panorama laboral y académico en el área tecnológica.
 
