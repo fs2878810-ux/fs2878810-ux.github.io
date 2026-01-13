@@ -10,7 +10,7 @@ image: "/images/reconocimiento_CEFODEN.jpeg"
 
 **17 y 18 de septiembre de 2025**
 
-Participé en un hackathon que permitió a los estudiantes de la UMB desarrollar un proyecto enfocado en alternativas de pago, utilizando como base la API Open Payments*. Junto con mi equipo, decidimos crear una aplicación web orientada a apoyar a los artesanos, en la cual pudieran mostrar sus productos, establecer precios y compartir sus datos de contacto.
+Participé en un hackathon que permitió a los estudiantes de la UMB desarrollar un proyecto enfocado en alternativas de pago, utilizando como base la API Open Payments. Junto con mi equipo, decidimos crear una aplicación web orientada a apoyar a los artesanos, en la cual pudieran mostrar sus productos, establecer precios y compartir sus datos de contacto.
 
 Además, la plataforma integró un sistema de pagos para facilitar las compras y un apartado de donaciones, con el objetivo de brindar una herramienta digital completa que fortaleciera su comercialización y presencia en línea.
 
